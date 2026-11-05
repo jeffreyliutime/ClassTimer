@@ -9,7 +9,7 @@
 
 ![ClassTimer interface preview](docs/preview.svg)
 
-[Windows v1.7 安装包：发布文件正在整理] · [项目问题与反馈](https://github.com/jeffreyliutime/ClassTimer/issues)
+[Windows 下载](https://github.com/jeffreyliutime/ClassTimer/releases/download/WindowsV1.7/ClassTimerLite_Windows_v1.7.zip) · [macOS 下载](https://github.com/jeffreyliutime/ClassTimer/releases/download/MacV1.2/ClassTimer-For-Mac.rar) · [问题与反馈](https://github.com/jeffreyliutime/ClassTimer/issues)
 
 </div>
 
@@ -27,16 +27,16 @@ ClassTimer separates the instructor's controls from the timer shown to the audie
 
 ## Downloads｜下载
 
-| Platform | Version | Package | Compatibility |
+| Platform | Version | Download | Compatibility |
 |---|---|---|---|
-| Windows | **ClassTimer Lite 1.7** | Package publication pending | Windows 10 / 11 · .NET Framework 4.8 |
-| macOS | **ClassTimer 1.2** | Package publication pending | Apple Silicon (M1 and later) · macOS 27.0+ |
+| Windows | **ClassTimer Lite 1.7** | [ZIP · 19 KB](https://github.com/jeffreyliutime/ClassTimer/releases/download/WindowsV1.7/ClassTimerLite_Windows_v1.7.zip) | Windows 10 / 11 · .NET Framework 4.8 |
+| macOS | **ClassTimer 1.2** | [RAR · 841 KB](https://github.com/jeffreyliutime/ClassTimer/releases/download/MacV1.2/ClassTimer-For-Mac.rar) | Apple Silicon (M1 and later) · macOS 27.0+ |
 
-> macOS v1.2 has been built as a native ARM64 app. Its ZIP package is not yet attached to this public repository; a download link will be added when the binary is published. No placeholder or broken download link is used.
+You can also find both packages on the [Releases page](https://github.com/jeffreyliutime/ClassTimer/releases).
 
 ## Windows｜安装与使用
 
-1. Download the Windows v1.7 ZIP from the repository Releases page once the package is published.
+1. Download [ClassTimer Lite v1.7](https://github.com/jeffreyliutime/ClassTimer/releases/download/WindowsV1.7/ClassTimerLite_Windows_v1.7.zip).
 2. Extract the ZIP file.
 3. Double-click `ClassTimerLite.exe`.
 4. Set the number and duration of segments, select the display, then start the timer.
@@ -49,9 +49,10 @@ ClassTimer separates the instructor's controls from the timer shown to the audie
 
 The macOS v1.2 build targets Apple Silicon and macOS 27.0 or later.
 
-1. Download and extract the macOS ZIP once it is published here.
-2. Move `ClassTimer.app` into the Applications folder.
-3. Open ClassTimer and configure the instructor and student windows.
+1. Download [ClassTimer for Mac v1.2](https://github.com/jeffreyliutime/ClassTimer/releases/download/MacV1.2/ClassTimer-For-Mac.rar).
+2. Extract the RAR archive with an archive utility.
+3. Move `ClassTimer.app` into the Applications folder.
+4. Open ClassTimer and configure the instructor and student windows.
 
 **macOS security notice:** The current build has not been signed with an Apple Developer ID certificate or notarized by Apple. macOS may show a first-launch security prompt. Verify the download source and use macOS's normal per-app approval process if appropriate. Do not disable Gatekeeper.
 
@@ -91,7 +92,7 @@ The macOS app does not require an account or login and is designed to run locall
 
 ## Repository status｜仓库状态
 
-This repository currently contains the project overview and interface preview. The Windows v1.7 and macOS v1.2 binaries have been built and checked locally, but their downloadable release assets have not yet been attached to GitHub. The complete, reproducible source projects for the current Windows and macOS releases have not yet been published here.
+This repository contains the project overview, interface preview and downloadable Windows and macOS release packages. The complete, reproducible source projects for the current Windows and macOS releases have not yet been published here.
 
 The project license has not yet been specified. Until a license is added, no open-source reuse or redistribution rights should be assumed.
 
