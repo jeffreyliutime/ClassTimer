@@ -91,7 +91,7 @@ The macOS app does not require an account or login and is designed to run locall
 
 ## Repository status｜仓库状态
 
-This repository currently contains the project overview, interface preview and available distribution package. The complete, reproducible source projects for the current Windows and macOS releases have not yet been published here.
+This repository currently contains the project overview and interface preview. The Windows v1.7 and macOS v1.2 binaries have been built and checked locally, but their downloadable release assets have not yet been attached to GitHub. The complete, reproducible source projects for the current Windows and macOS releases have not yet been published here.
 
 The project license has not yet been specified. Until a license is added, no open-source reuse or redistribution rights should be assumed.
 
