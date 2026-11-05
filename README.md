@@ -2,14 +2,14 @@
 
 一款面向课堂、培训和演讲场景的轻量计时工具。讲师在控制台设置计时，学员端通过独立悬浮窗口查看时间。
 
-**本仓库当前提供 Windows 与 macOS 的可运行分发包。** 完整、可复现的最新版本构建源码尚未整理进仓库；这里不会把早期原型或界面参考文件冒充为当前正式版源码。
+## 平台版本
 
-## 下载
+| 平台 | 分发包 | 运行环境 | 发布状态 |
+|---|---|---|---|
+| Windows | ClassTimer Lite v1.7 ZIP | Windows 10/11；.NET Framework 4.8 | 已整理，待上传二进制附件 |
+| macOS | ClassTimer v1.2 Apple Silicon ZIP | Apple Silicon；macOS 27 | 已整理，待上传二进制附件 |
 
-| 平台 | 版本 | 下载 | 适用环境 |
-|---|---:|---|---|
-| Windows | 1.7 | [ClassTimerLite_Windows_v1.7.zip](downloads/ClassTimerLite_Windows_v1.7.zip) | Windows 10 / 11；需要 .NET Framework 4.8 |
-| macOS | 1.2 | [ClassTimer_Mac_1.2_AppleSilicon.zip](downloads/ClassTimer_Mac_1.2_AppleSilicon.zip) | Apple Silicon（M 系列）；macOS 27.0 或更高版本 |
+> 当前仓库正在建立项目说明与发布结构。GitHub 连接可以提交文本文件，但当前可用的上传接口不能直接传输 ZIP/EXE/App 等二进制文件，因此下载包尚未出现在仓库中。不会放置失效的下载链接，也不会把文档或早期原型冒充为完整源代码。
 
 ## 功能概览
 
@@ -27,40 +27,38 @@
 
 ## Windows 安装
 
-1. 下载 Windows ZIP 并解压。
-2. 双击运行 `ClassTimerLite.exe`。
-3. 在讲师控制台选择显示屏幕并设置计时段。
-
-这是免安装的轻量 Windows 程序。当前包使用 .NET Framework 4.8，不包含 Chromium。首次运行时，Windows SmartScreen 可能提示无法识别发布者；这是因为当前分发包没有经过 Microsoft 认可的发布者代码签名，并不等同于检测到恶意软件。请只从你信任的来源下载，不要为了运行程序而关闭 Windows 安全保护。
+Windows 分发包发布后，下载 ZIP 并解压，双击运行 `ClassTimerLite.exe`。无需安装程序；运行环境为 .NET Framework 4.8。首次运行时，Windows SmartScreen 可能提示无法识别发布者，因为当前分发包没有经过 Microsoft 认可的发布者代码签名。这不等于检测到恶意软件。请只从可信来源下载，不要为了运行程序而关闭 Windows 安全保护。
 
 ## macOS 安装
 
-1. 下载 macOS ZIP 并解压。
-2. 将 `ClassTimer.app` 拖入「应用程序」文件夹。
-3. 双击启动。
+macOS 分发包发布后，下载 ZIP 并解压，将 `ClassTimer.app` 拖入「应用程序」文件夹后启动。当前包为 Apple Silicon 原生 ARM64 构建。该构建未使用 Apple Developer ID 签名和 Apple 公证；首次打开时 macOS 可能显示安全提示。请确认下载来源可信，再按 macOS 提供的方式允许打开。不要关闭 Gatekeeper 或系统安全保护。
 
-当前 macOS 包为 Apple Silicon 原生 ARM64 构建，最低系统版本为 macOS 27.0。该版本采用本地临时签名，尚未使用 Apple Developer ID 签名和 Apple 公证；首次打开时 macOS 可能显示安全提示。请先确认下载来源可信，再按 macOS 提供的方式允许打开。不要关闭 Gatekeeper 或系统安全保护。
-
-## 已知限制
-
-- Windows 与 macOS 的分发包均未使用面向公众发行的正式开发者证书签名。
-- macOS 版本目前仅提供 Apple Silicon 构建，不包含 Intel 版本。
-- 投影、全屏演示软件覆盖及多屏行为仍应在实际授课设备上验证。
-- 当前仓库提供的是可运行分发包，不代表已公开完整构建源码。
-
-## 版本记录
+## 版本与兼容性说明
 
 ### Windows v1.7
 - 六段计时
-- 时间显示格式优化：不足一小时显示 `MM:SS`，达到一小时显示 `HH:MM:SS`
+- 不足一小时显示 `MM:SS`，达到一小时显示 `HH:MM:SS`
+- .NET Framework 4.8
+- 轻量原生 Windows 程序，不包含 Chromium
 
-### macOS v1.2
-- Apple Silicon 原生 ARM64 构建
+### macOS v1.2（Apple Silicon）
+- 原生 ARM64 构建
 - 最多六段计时，支持时／分／秒
-- 支持倒计时、正计时和时钟模式
-- 支持多屏显示、学员端尺寸、主题与提醒文字
+- 倒计时、正计时和时钟模式
+- 多屏显示、学员端尺寸、主题与提醒文字
+- 未进行 Apple Developer ID 签名或公证
+- 外接投影、Keynote／PowerPoint 全屏覆盖行为仍需在实际授课设备验收
 
----
+**版本注意：** macOS ZIP 内附的安装说明文件标题仍标注 v1.0；仓库以交付压缩包文件名 v1.2 作为本次分发包标识，未擅自改写包内原始文件。
 
-**项目名称：** ClassTimer  
-**仓库：** https://github.com/jeffreyliutime/ClassTimer
+## 仓库结构
+
+- `README.md` — 项目说明与安装指南
+- `docs/RELEASES.md` — 分发版本记录与校验值
+- `downloads/` — 计划存放 Windows 与 macOS 分发包
+
+完整、可复现的当前版本构建源码尚未整理进仓库。
+
+## 项目
+
+https://github.com/jeffreyliutime/ClassTimer
