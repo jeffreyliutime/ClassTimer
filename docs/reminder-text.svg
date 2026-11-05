@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">ClassTimer reminder text feature</title>
+<desc id="desc">The instructor enters a task prompt in the console and displays it directly above the countdown on the student projection window.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5f8fc"/><stop offset="1" stop-color="#e5edf6"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#155a40"/><stop offset="1" stop-color="#0b3d2b"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#26384e" flood-opacity=".17"/></filter>
+ <style>.ui{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}.ink{fill:#1a293b}.muted{fill:#64748b}.white{fill:#fff}</style>
+</defs>
+<rect width="1400" height="760" rx="26" fill="url(#bg)"/>
+<text x="62" y="72" class="ui ink" font-size="38" font-weight="780">提示文字与倒计时，同屏呈现</text>
+<text x="64" y="111" class="ui muted" font-size="19">A small but meaningful classroom detail: the timer tells students how much time remains; the prompt tells them what to do.</text>
+<g filter="url(#shadow)">
+ <rect x="60" y="165" width="570" height="490" rx="18" fill="#202a36" stroke="#59677b" stroke-width="2"/>
+ <rect x="60" y="165" width="570" height="54" rx="18" fill="#e9eef5"/><rect x="60" y="195" width="570" height="24" fill="#e9eef5"/>
+ <circle cx="90" cy="192" r="9" fill="#2d6bdb"/>
+ <text x="116" y="199" class="ui" font-size="18" font-weight="700" fill="#1b2737">讲师控制台 · 提醒文字</text>
+ <text x="94" y="270" class="ui" font-size="16" fill="#dce5ef">输入希望学员在这一阶段看到的提示</text>
+ <rect x="94" y="293" width="500" height="92" rx="9" fill="#f7f9fc"/>
+ <text x="116" y="332" class="ui" font-size="19" fill="#1c2939">请完成小组讨论，并准备好你们的汇报</text>
+ <text x="116" y="360" class="ui" font-size="14" fill="#738196">示例：任务说明 / 环节提醒 / 时间节点提示</text>
+ <rect x="94" y="414" width="220" height="54" rx="9" fill="#2869d8"/>
+ <text x="204" y="448" text-anchor="middle" class="ui white" font-size="19" font-weight="700">显示文字</text>
+ <rect x="328" y="414" width="220" height="54" rx="9" fill="#3b4758" stroke="#64748b"/>
+ <text x="438" y="448" text-anchor="middle" class="ui white" font-size="19">清除文字</text>
+ <text x="94" y="526" class="ui" font-size="17" font-weight="700" fill="#eaf0f7">讲师可以随课堂进程更新提示</text>
+ <text x="94" y="562" class="ui" font-size="15" fill="#aeb9c8">不需要停下演示，也不必反复口头提醒。</text>
+ <text x="94" y="600" class="ui" font-size="15" fill="#aeb9c8">提示文字由讲师控制，可显示或清除。</text>
+</g>
+<path d="M652 402 H735" stroke="#3476dc" stroke-width="4" stroke-linecap="round"/>
+<path d="M722 388 L738 402 L722 416" fill="none" stroke="#3476dc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="695" y="370" text-anchor="middle" class="ui" font-size="15" font-weight="700" fill="#2864bc">一键显示</text>
+<g filter="url(#shadow)">
+ <rect x="770" y="165" width="570" height="490" rx="18" fill="#101820" stroke="#fff" stroke-width="5"/>
+ <rect x="776" y="171" width="558" height="478" rx="13" fill="url(#green)"/>
+ <text x="1055" y="220" text-anchor="middle" class="ui" font-size="15" fill="#cdebdc" letter-spacing="1">学员端 · 投影画面</text>
+ <rect x="835" y="253" width="440" height="116" rx="12" fill="#ffffff" fill-opacity=".10" stroke="#c5ecd8" stroke-opacity=".48"/>
+ <text x="1055" y="286" text-anchor="middle" class="ui" font-size="15" fill="#d5f1e2">本阶段任务提示</text>
+ <text x="1055" y="325" text-anchor="middle" class="ui" font-size="23" font-weight="750" fill="#fff">请完成小组讨论</text>
+ <text x="1055" y="353" text-anchor="middle" class="ui" font-size="17" fill="#e1f5e9">并准备好你们的汇报</text>
+ <text x="1055" y="502" text-anchor="middle" class="ui" font-size="112" font-weight="780" fill="#fff" letter-spacing="2">15:00</text>
+ <text x="1055" y="548" text-anchor="middle" class="ui" font-size="16" fill="#ccebdd">第 2 段 · 小组讨论</text>
+ <text x="1055" y="604" text-anchor="middle" class="ui" font-size="14" fill="#d4f0e1">提示文字紧邻计时区域，信息一眼可见</text>
+</g>
+<text x="700" y="710" text-anchor="middle" class="ui ink" font-size="20" font-weight="750">让学员同时知道：现在还剩多少时间，以及这一段要完成什么。</text>
+<text x="700" y="739" text-anchor="middle" class="ui muted" font-size="13">Illustrative product UI · Interface details may vary by operating system and release.</text>
+</svg>
