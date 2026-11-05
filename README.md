@@ -1,65 +1,100 @@
-# ClassTimer｜课堂计时器
+<div align="center">
 
-一款面向课堂、培训和演讲场景的轻量计时工具。讲师在控制台设置计时，学员端通过独立悬浮窗口查看时间。
+# ClassTimer
 
-## 平台版本
+**A floating classroom timer for Windows and macOS**  
+**面向课堂、培训、工作坊与演讲的悬浮计时器**
 
-| 平台 | 分发包 | 运行环境 | 发布状态 |
+讲师在自己的屏幕上控制计时，学员在投影或独立显示屏上看到始终置顶的计时窗口。
+
+![ClassTimer interface preview](docs/preview.svg)
+
+[Windows 下载](downloads/ClassTimerLite_Windows_v1.7.zip) · [项目问题与反馈](https://github.com/jeffreyliutime/ClassTimer/issues)
+
+</div>
+
+---
+
+## What it does｜它解决什么问题
+
+ClassTimer separates the instructor's controls from the timer shown to the audience.
+
+- **Instructor console｜讲师控制台**：设置计时段、开始／暂停／重置、调整时间与控制显示窗口。
+- **Floating student display｜学员悬浮窗**：独立显示计时数字，可用于投影、扩展屏和课堂大屏。
+- **Multi-segment timing｜多段计时**：最多六段，每段独立设置时长。
+- **Flexible modes｜多种模式**：倒计时、正计时与当前时钟。
+- **Presentation-friendly｜适合演示场景**：可选择显示屏、调整窗口尺寸、切换背景主题并显示提醒文字。
+
+## Downloads｜下载
+
+| Platform | Version | Package | Compatibility |
 |---|---|---|---|
-| Windows | ClassTimer Lite v1.7 ZIP | Windows 10/11；.NET Framework 4.8 | 
-|
-| macOS | ClassTimer v1.2 Apple Silicon ZIP | Apple Silicon；macOS 27 |  |
+| Windows | **ClassTimer Lite 1.7** | [Download ZIP](downloads/ClassTimerLite_Windows_v1.7.zip) | Windows 10 / 11 · .NET Framework 4.8 |
+| macOS | **ClassTimer 1.2** | Package publication pending | Apple Silicon (M1 and later) · macOS 27.0+ |
 
-> 当前仓库正在建立项目说明与发布结构。GitHub 连接可以提交文本文件，但当前可用的上传接口不能直接传输 ZIP/EXE/App 等二进制文件，因此下载包尚未出现在仓库中。不会放置失效的下载链接，也不会把文档或早期原型冒充为完整源代码。
+> macOS v1.2 has been built as a native ARM64 app. Its ZIP package is not yet attached to this public repository; a download link will be added when the binary is published. No placeholder or broken download link is used.
 
-## 功能概览
+## Windows｜安装与使用
 
-- 讲师控制台与学员悬浮计时窗口
-- 最多六个独立计时段
-- 每段可设置小时、分钟和秒
-- 倒计时、正计时和当前时钟模式
-- 开始、暂停／继续、重置与增减一分钟
-- 多段计时与循环
-- 选择学员端显示屏幕
-- 学员端窗口尺寸与背景主题设置
-- 提醒文字显示
+1. Download the [Windows v1.7 ZIP](downloads/ClassTimerLite_Windows_v1.7.zip).
+2. Extract the ZIP file.
+3. Double-click `ClassTimerLite.exe`.
+4. Set the number and duration of segments, select the display, then start the timer.
 
-具体功能以对应平台的版本为准。
+**Runtime:** .NET Framework 4.8. The package does not include Chromium and does not require an installer.
 
-## Windows 安装
+**Windows security notice:** The current package is not signed with a publicly trusted code-signing certificate. Windows SmartScreen may therefore show an unfamiliar-publisher warning. This warning does not by itself mean malware has been detected. Download only from a source you trust; do not disable Windows security protections to run the app.
 
-Windows 分发包发布后，下载 ZIP 并解压，双击运行 `ClassTimerLite.exe`。无需安装程序；运行环境为 .NET Framework 4.8。首次运行时，Windows SmartScreen 可能提示无法识别发布者，因为当前分发包没有经过 Microsoft 认可的发布者代码签名。这不等于检测到恶意软件。请只从可信来源下载，不要为了运行程序而关闭 Windows 安全保护。
+## macOS｜安装与使用
 
-## macOS 安装
+The macOS v1.2 build targets Apple Silicon and macOS 27.0 or later.
 
-macOS 分发包发布后，下载 ZIP 并解压，将 `ClassTimer.app` 拖入「应用程序」文件夹后启动。当前包为 Apple Silicon 原生 ARM64 构建。该构建未使用 Apple Developer ID 签名和 Apple 公证；首次打开时 macOS 可能显示安全提示。请确认下载来源可信，再按 macOS 提供的方式允许打开。不要关闭 Gatekeeper 或系统安全保护。
+1. Download and extract the macOS ZIP once it is published here.
+2. Move `ClassTimer.app` into the Applications folder.
+3. Open ClassTimer and configure the instructor and student windows.
 
-## 版本与兼容性说明
+**macOS security notice:** The current build has not been signed with an Apple Developer ID certificate or notarized by Apple. macOS may show a first-launch security prompt. Verify the download source and use macOS's normal per-app approval process if appropriate. Do not disable Gatekeeper.
 
-### Windows v1.7
-- 六段计时
-- 不足一小时显示 `MM:SS`，达到一小时显示 `HH:MM:SS`
+## Features｜功能清单
+
+- Up to 6 timer segments｜最多六段计时
+- Per-segment hours, minutes and seconds｜每段独立设置时、分、秒
+- Countdown / count-up / clock｜倒计时、正计时、时钟
+- Start, pause, resume and reset｜开始、暂停、继续、重置
+- Quick adjustment by one minute｜加减一分钟
+- Optional loop mode｜循环计时
+- Selectable display screen｜选择投影／显示屏
+- Floating student window with size and theme options｜学员悬浮窗尺寸与主题设置
+- Reminder text｜提醒文字
+
+Features and window behavior can differ slightly by operating system.
+
+## Version notes｜版本说明
+
+### Windows · v1.7
+- Windows 10 / 11
 - .NET Framework 4.8
-- 轻量原生 Windows 程序，不包含 Chromium
+- Lightweight native Windows application; no Chromium runtime
+- Time format: `MM:SS` below one hour and `HH:MM:SS` at one hour or above
 
-### macOS v1.2（Apple Silicon）
-- 原生 ARM64 构建
-- 最多六段计时，支持时／分／秒
-- 倒计时、正计时和时钟模式
-- 多屏显示、学员端尺寸、主题与提醒文字
-- 未进行 Apple Developer ID 签名或公证
-- 外接投影、Keynote／PowerPoint 全屏覆盖行为仍需在实际授课设备验收
+### macOS · v1.2
+- Native Apple Silicon ARM64 build
+- Built with macOS 27.0 SDK
+- Bundle identifier: `com.harmonizedintelligence.classtimer`
+- Minimum system version: macOS 27.0
+- Not yet notarized by Apple
+- External display, Keynote and PowerPoint full-screen overlay behavior should be verified on the actual teaching setup
 
-**版本注意：** macOS ZIP 内附的安装说明文件标题仍标注 v1.0；仓库以交付压缩包文件名 v1.2 作为本次分发包标识，未擅自改写包内原始文件。
+## Privacy｜隐私
 
-## 仓库结构
+The macOS app does not require an account or login and is designed to run locally. It does not request camera, microphone, screen-recording or accessibility permissions for its timer display. The Windows app also runs as a local desktop utility.
 
-- `README.md` — 项目说明与安装指南
-- `docs/RELEASES.md` — 分发版本记录与校验值
-- `downloads/` — 计划存放 Windows 与 macOS 分发包
+## Repository status｜仓库状态
 
-完整、可复现的当前版本构建源码尚未整理进仓库。
+This repository currently contains the project overview, interface preview and available distribution package. The complete, reproducible source projects for the current Windows and macOS releases have not yet been published here.
 
-## 项目
+The project license has not yet been specified. Until a license is added, no open-source reuse or redistribution rights should be assumed.
 
-https://github.com/jeffreyliutime/ClassTimer
+## Feedback
+
+Please use [GitHub Issues](https://github.com/jeffreyliutime/ClassTimer/issues) for bug reports and feature suggestions.
