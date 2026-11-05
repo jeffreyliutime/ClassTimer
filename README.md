@@ -6,8 +6,9 @@
 
 | 平台 | 分发包 | 运行环境 | 发布状态 |
 |---|---|---|---|
-| Windows | ClassTimer Lite v1.7 ZIP | Windows 10/11；.NET Framework 4.8 | 已整理，待上传二进制附件 |
-| macOS | ClassTimer v1.2 Apple Silicon ZIP | Apple Silicon；macOS 27 | 已整理，待上传二进制附件 |
+| Windows | ClassTimer Lite v1.7 ZIP | Windows 10/11；.NET Framework 4.8 | 
+|
+| macOS | ClassTimer v1.2 Apple Silicon ZIP | Apple Silicon；macOS 27 |  |
 
 > 当前仓库正在建立项目说明与发布结构。GitHub 连接可以提交文本文件，但当前可用的上传接口不能直接传输 ZIP/EXE/App 等二进制文件，因此下载包尚未出现在仓库中。不会放置失效的下载链接，也不会把文档或早期原型冒充为完整源代码。
 
