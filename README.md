@@ -9,7 +9,7 @@
 
 ![ClassTimer interface preview](docs/preview.svg)
 
-[Windows 下载](downloads/ClassTimerLite_Windows_v1.7.zip) · [项目问题与反馈](https://github.com/jeffreyliutime/ClassTimer/issues)
+[Windows v1.7 安装包：发布文件正在整理] · [项目问题与反馈](https://github.com/jeffreyliutime/ClassTimer/issues)
 
 </div>
 
@@ -29,14 +29,14 @@ ClassTimer separates the instructor's controls from the timer shown to the audie
 
 | Platform | Version | Package | Compatibility |
 |---|---|---|---|
-| Windows | **ClassTimer Lite 1.7** | [Download ZIP](downloads/ClassTimerLite_Windows_v1.7.zip) | Windows 10 / 11 · .NET Framework 4.8 |
+| Windows | **ClassTimer Lite 1.7** | Package publication pending | Windows 10 / 11 · .NET Framework 4.8 |
 | macOS | **ClassTimer 1.2** | Package publication pending | Apple Silicon (M1 and later) · macOS 27.0+ |
 
 > macOS v1.2 has been built as a native ARM64 app. Its ZIP package is not yet attached to this public repository; a download link will be added when the binary is published. No placeholder or broken download link is used.
 
 ## Windows｜安装与使用
 
-1. Download the [Windows v1.7 ZIP](downloads/ClassTimerLite_Windows_v1.7.zip).
+1. Download the Windows v1.7 ZIP from the repository Releases page once the package is published.
 2. Extract the ZIP file.
 3. Double-click `ClassTimerLite.exe`.
 4. Set the number and duration of segments, select the display, then start the timer.
