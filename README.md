@@ -88,21 +88,6 @@ Examples include “请完成小组讨论并准备汇报”, “接下来进入�
 
 Features and window behavior can differ slightly by operating system.
 
-## Version notes｜版本说明
-
-### Windows · v1.7
-- Windows 10 / 11
-- .NET Framework 4.8
-- Lightweight native Windows application; no Chromium runtime
-- Time format: `MM:SS` below one hour and `HH:MM:SS` at one hour or above
-
-### macOS · v1.2
-- Native Apple Silicon ARM64 build
-- Built with macOS 27.0 SDK
-- Bundle identifier: `com.harmonizedintelligence.classtimer`
-- Minimum system version: macOS 27.0
-- Not yet notarized by Apple
-- External display, Keynote and PowerPoint full-screen overlay behavior should be verified on the actual teaching setup
 
 ## Privacy｜隐私
 
