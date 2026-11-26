@@ -412,7 +412,7 @@ struct LecturerView: View {
                 }
 
                 HStack {
-                    Picker("计时模式", selection: Binding(get: { model.core.mode }, set: model.selectMode)) {
+                    Picker("计时模式", selection: Binding(get: { model.core.mode }, set: { newMode in model.selectMode(newMode) })) {
                         ForEach(TimerMode.allCases) { Text($0.rawValue).tag($0) }
                     }.pickerStyle(.segmented)
                     Picker("学员窗口配色", selection: $model.theme) {
