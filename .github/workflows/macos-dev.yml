@@ -3,10 +3,10 @@ on:
   push:
     branches: [dev/macos-2.6]
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - name: Test and build Apple Silicon app
@@ -16,3 +16,8 @@ jobs:
           name: ClassTimer-Mac-2.6-AppleSilicon
           path: ClassTimer_Mac_2.6/build/ClassTimer_Mac_2.6_AppleSilicon.zip
           if-no-files-found: error
+      - name: Publish development download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "mac-dev-2.6-$GITHUB_RUN_NUMBER" ClassTimer_Mac_2.6/build/ClassTimer_Mac_2.6_AppleSilicon.zip --target "$GITHUB_SHA" --prerelease --title "ClassTimer 2.6 · Mac 开发版" --notes "Apple Silicon · macOS 15+ · 开发测试版"
